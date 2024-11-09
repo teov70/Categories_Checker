@@ -17,8 +17,24 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // Log the arrays to verify they contain the right items
-    console.log("Matched Categories:", matched);
-    console.log("Non-Matched Categories:", nonMatched);
+    const resultsContainer = document.getElementById("resultsContainer");
+
+    // Display each category
+    myArray.forEach((category, index) => {
+      const categoryElement = document.createElement("span");
+      categoryElement.textContent = category;
+    
+      // Applying "not-matched" styling
+      if (nonMatchedCategories.includes(category)) {
+        categoryElement.classList.add("not-matched");
+      }
+    
+      resultsContainer.appendChild(categoryElement);
+    
+      // Adding a separator (except after last item)
+      if (index < myArray.length - 1) {
+        resultsContainer.appendChild(document.createTextNode("; "));
+      }
+    });
   });
 });
