@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const textInput = document.getElementById("textInput").value;
 
     let assignedText = textInput;
-
     console.log("Assigned Text:", assignedText);
-
-    alert("Text assigned: " + assignedText);
+    const myArray = assignedText.split("; ");
+    console.log("Split Categories Array:", myArray);
   });
 });
