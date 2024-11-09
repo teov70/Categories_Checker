@@ -1,4 +1,46 @@
-/* popup.css */
+/* Import Space Mono font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* Base styles for dark mode */
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  color: #e0e0e0;
+  background-color: #1c1c1c; /* Deep gray background */
+  padding: 15px; /* Inner padding for spacing */
+}
+
+/* Non-matched categories styled in red */
 .not-matched {
-    color: rgb(255, 0, 0);
-  }
+  color: #ff4c4c; /* Bright red for non-matches */
+  background-color: #3a1c1c;
+  font-weight: bold;
+}
+
+input[type="text"], button {
+  padding: 10px; /* Adds inner spacing for readability */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Dark background for input fields */
+input[type="text"] {
+  background-color: #333; /* Dark gray background for inputs */
+  border: 1px solid #4a4a4a; /* Subtle border for differentiation */
+}
+
+/* Purple background for buttons */
+button {
+  background-color: #5c4cff; /* Main purple color */
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #7a6eff; /* Slightly lighter purple on hover */
+}

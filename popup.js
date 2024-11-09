@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("checkButton").addEventListener("click", function() {
+    
+    // Clear resultsContainer at the start
+    const resultsContainer = document.getElementById("resultsContainer");
+    resultsContainer.innerHTML = ''; // Clear previous results
     const textInput = document.getElementById("textInput").value;
 
     let assignedText = textInput;
@@ -16,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
         nonMatched.push(category);
       }
     });
-
-    const resultsContainer = document.getElementById("resultsContainer");
 
     // Display each category
     myArray.forEach((category, index) => {
@@ -36,5 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
         resultsContainer.appendChild(document.createTextNode("; "));
       }
     });
+
+    // Populate the uneditable field with matched categories
+    const matchedField = document.getElementById("matchedField");
+    matchedField.value = matched.join("; ");
   });
 });
