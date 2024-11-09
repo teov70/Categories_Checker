@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       categoryElement.textContent = category;
     
       // Applying "not-matched" styling
-      if (nonMatchedCategories.includes(category)) {
+      if (nonMatched.includes(category)) {
         categoryElement.classList.add("not-matched");
       }
     
