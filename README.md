@@ -32,9 +32,10 @@ _A Chrome extension to validate and manage category lists effortlessly!_
 ## 📄 Example
 
 Here’s a quick example to get started:
-
+Input:
 ```plaintext
-Input: Accounting; Marketing; Unknown Category
+Accounting; Marketing; Unknown Category; Advertising
+```
 Output:
 - Matched: Accounting, Marketing
 - Not Matched: Unknown Category
