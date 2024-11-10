@@ -43,4 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const matchedField = document.getElementById("matchedField");
     matchedField.value = matched.join("; ");
   });
+  // Copy button functionality
+  document.getElementById("copyButton").addEventListener("click", function() {
+  
+    // Select and copy the value of matchedCategoriesField
+    matchedField.select();
+    document.execCommand("copy");
+  });
 });
