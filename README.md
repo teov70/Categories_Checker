@@ -1,4 +1,4 @@
-# 🌟 Categories Checker Extension 🌟
+# 🌟 PredictLeads Categories Checker Extension 🌟
 
 _A Chrome extension to validate and manage category lists effortlessly!_
 

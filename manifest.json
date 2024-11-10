@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Categories Checker Extension",
+  "name": "PredictLeads Categories Checker Extension",
   "version": "1.0",
   "description": "A simple Chrome extension that checks the validity of PredictLeads categories.",
   "action": {
