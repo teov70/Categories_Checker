@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+  
+    // Event listener to trigger the check button on Enter key press
+    textInput.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        checkButton.click();
+      }
+    });
+  
   document.getElementById("checkButton").addEventListener("click", function() {
     
     // Clear resultsContainer at the start
