@@ -32,6 +32,7 @@ _A Chrome extension to validate and manage category lists effortlessly!_
 ## 📄 Example
 
 Here’s a quick example to get started:
+
 Input:
 ```plaintext
 Accounting; Marketing; Unknown Category; Advertising
